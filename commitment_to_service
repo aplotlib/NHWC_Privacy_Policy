@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naples HomeWatch & Care</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1, h2, p {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Naples HomeWatch & Care</h1>
+        <h2>About Us</h2>
+        <p><strong>Alex Popoff</strong> - Military Police Veteran with over 5 years of service. M.S. in Business Intelligence with extensive law enforcement and security experience.</p>
+        <p><strong>Savannah Garner</strong> - Over 10 years in hospitality, managing family businesses. Degree in Hospitality Management.</p>
+        <h2>Our Pledge</h2>
+        <p>We believe diversity makes us stronger. We are committed to Diversity, Equity, and Inclusion (DEI).</p>
+        <h2>Coming Soon</h2>
+        <p>Accepting new clients starting in October. Pricing and more details to come.</p>
+    </div>
+</body>
+</html>
