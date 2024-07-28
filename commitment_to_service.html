@@ -44,6 +44,20 @@
             width: 100%;
             bottom: 0;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
         .call-to-action {
             background-color: #4CAF50;
             color: white;
@@ -71,14 +85,37 @@
         </section>
         <section>
             <h2>Pricing</h2>
-            <p>Our pricing is designed to be competitive while offering top-notch services:</p>
-            <ul>
-                <li>Weekly Inspection: $30 per visit</li>
-                <li>Bi-Weekly Inspection: $35 per visit</li>
-                <li>Monthly Inspection: $45 per visit</li>
-                
-            </ul>
-            <p>For custom service plans or long-term contracts, please contact us for special pricing.</p>
+            <p>Our pricing includes a $50 client setup fee to securely manage keys and digital codes, plus a $75/m flat fee for basic inspections and services. Here's how our pricing breaks down based on the frequency of inspections:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service Type</th>
+                        <th>Frequency</th>
+                        <th>Cost per Inspection</th>
+                        <th>Total Monthly Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic Service + Weekly Inspections</td>
+                        <td>Weekly</td>
+                        <td>$30</td>
+                        <td>$195 (4 x $30 + $75 flat fee)</td>
+                    </tr>
+                    <tr>
+                        <td>Basic Service + Bi-Weekly Inspections</td>
+                        <td>Bi-Weekly</td>
+                        <td>$35</td>
+                        <td>$145 (2 x $35 + $75 flat fee)</td>
+                    </tr>
+                    <tr>
+                        <td>Basic Service + Monthly Inspection</td>
+                        <td>Monthly</td>
+                        <td>$45</td>
+                        <td>$120 ($45 + $75 flat fee)</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section>
             <h2>Join Our Waitlist</h2>
@@ -92,4 +129,3 @@
     </footer>
 </body>
 </html>
-
