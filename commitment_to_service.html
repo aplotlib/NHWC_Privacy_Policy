@@ -4,40 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naples HomeWatch & Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f8ff;
-            color: #2c3e50;
-            line-height: 1.6;
+            color: #333;
         }
         .container {
-            width: 80%;
+            width: 85%;
             margin: 20px auto;
             padding: 20px;
             background: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
-        h1, h2, p {
-            color: #2c3e50;
+        header h1 {
+            margin: 0;
+        }
+        section {
+            margin-top: 20px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.8em;
+            background-color: #2c3e50;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .call-to-action {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Welcome to Naples HomeWatch & Care</h1>
+    </header>
     <div class="container">
-        <h1>Naples HomeWatch & Care</h1>
-        <h2>About Us</h2>
-        <p><strong>Alex Popoff</strong> - Military Police Veteran with over 5 years of service. M.S. in Business Intelligence with extensive law enforcement and security experience.</p>
-        <p><strong>Savannah Garner</strong> - Over 10 years in hospitality, managing family businesses. Degree in Hospitality Management.</p>
-        <h2>Our Pledge</h2>
-        <p>We believe diversity makes us stronger. We are committed to Diversity, Equity, and Inclusion (DEI).</p>
-        <h2>Coming Soon</h2>
-        <p>Accepting new clients starting in October. Pricing and more details to come.</p>
-        <p>Please send us an email at apopoff1@proton.me or call Alex at (239) 235-9876 to be added to our waitlist.</p>
+        <section>
+            <h2>About Us</h2>
+            <p><strong>Alex Popoff</strong> - Military Police Veteran with over 5 years of service. M.S. in Business Intelligence with extensive law enforcement and security experience.</p>
+            <p><strong>Savannah Garner</strong> - Over 10 years in hospitality, managing family businesses. Degree in Hospitality Management.</p>
+        </section>
+        <section>
+            <h2>Our Services</h2>
+            <p>Providing comprehensive home care and surveillance, ensuring peace of mind while you're away. From property checks to maintenance coordination - we've got you covered.</p>
+        </section>
+        <section>
+            <h2>Testimonials</h2>
+            <p>"Absolutely trustworthy and professional - Naples HomeWatch has never let us down!" - <strong>John D.</strong></p>
+            <p>"Their attention to detail is unmatched. Highly recommend their services!" - <strong>Emma S.</strong></p>
+        </section>
+        <section>
+            <h2>Join Our Waitlist</h2>
+            <p>Accepting new clients starting in October. Get in touch to learn more about our services and secure your spot.</p>
+            <a href="mailto:apopoff1@proton.me" class="call-to-action">Email Us</a>
+            <p>Or call Alex at (239) 235-9876</p>
+        </section>
     </div>
+    <footer>
+        <p>© 2024 Naples HomeWatch & Care. All rights reserved.</p>
+    </footer>
 </body>
 </html>
