@@ -7,14 +7,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 85%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .cta {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .cta:hover {
+            background-color: #45a049;
+        }
+        .form-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h3 {
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+        .form-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <img src="NHWC Logo.jpeg" alt="Naples HomeWatch & Care Logo" style="max-width: 200px; margin: 20px auto; display: block;">
         <h1>Welcome to Naples HomeWatch & Care</h1>
     </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <div class="container">
-        <section>
+        <section id="about">
             <h2>Who is Naples HomeWatch & Care?</h2>
             <p><strong>Alex Popoff</strong> - Military Police Veteran with over 5 years of service. M.S. in Business Intelligence with extensive law enforcement and security experience.</p>
             <p><strong>Savannah Garner</strong> - Over 10 years in hospitality, managing family businesses. Degree in Hospitality Management.</p>
@@ -83,7 +156,6 @@
 <p>We also offer home setup and tear down services for storm season. Need storm shutters put up or taken down? No problem. These services are available as add-ons to our basic packages, with pricing negotiable.</p>
 </section>
 
-        
         <section>
             <h2>Pricing</h2>
             <p class="highlight">Our pricing includes a $50 client setup fee to securely manage keys and digital codes, plus a $75/m flat fee for basic inspections and services. Here's how our pricing breaks down based on the frequency of inspections:</p>
@@ -113,12 +185,12 @@
                         <td>Basic Service + Monthly Inspection</td>
                         <td>Monthly</td>
                         <td>$45</td>
-                        <td>$120 ($45 + $75 flat fee)</td>
+                        <td>$                    <td>$120 ($45 + $75 flat fee)</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <section>
+        <section id="areas-served">
             <h2>Areas Served</h2>
             <p class="highlight">We proudly serve seasonal residents in Collier County, focusing on the following areas:</p>
             <ul>
@@ -130,105 +202,50 @@
             </ul>
             <p>Contact us if you're close for consideration.</p>
         </section>
-        <section>
+        <section id="security-trust">
             <h2>Security and Trust</h2>
             <p class="highlight">All payments are securely processed via invoices with enterprise-level encryption. Keys and passwords are stored securely in our safes, with encrypted codes corresponding to each key so no keys are labeled with the client name or address. This adds an extra layer of protection.</p>
             <p>Our business is only owner-operated, meaning we are the ones taking care of your home, not an employee. We have background-checked ourselves via a third party and are licensed by the state of Florida to conduct business. We carry over $1 million in liability insurance.</p>
             <p>We put your home and our business first, with no substitutions. Your home, and your satisfaction are our business. Details matter to us.</p>
         </section>
-        <section>
+        <section id="consultation-agreement">
             <h2>Consultation and Agreement</h2>
             <p>We offer a free 15-minute consultation where we can answer your questions. If we are both a good fit, we can create a personalized plan that includes our standard 31 checks plus any specifics you require for a small additional fee in some cases.</p>
             <p>We will be thorough, which is why we have a startup fee. We will need your lawn care and any cleaning or other services providers' contact information in case of emergencies. We can be there while you can't, but we need their info. We also have both us and you sign a small contract establishing our agreement. This is protection for each of us, and we also like to introduce ourselves to neighbors so they know we are supposed to be there and likely no one else. We are a team-oriented approach.</p>
         </section>
-<section id="insurance-bonding">
-    <h2>Our Insurance and Bonding Coverage</h2>
-    <p>At Naples HomeWatch & Care, your peace of mind is our priority. We understand the trust you place in us when we look after your home. To ensure your property is well-protected, we have comprehensive insurance and bonding coverage:</p>
-    <ul>
-        <li><strong>General Liability Insurance:</strong> $1,000,000 per occurrence / $2,000,000 aggregate</li>
-        <li><strong>Property Coverage:</strong> $100,000</li>
-        <li><strong>Business Interruption Insurance:</strong> Included in our Business Owners Policy</li>
-        <li><strong>Professional Liability Insurance:</strong> $1,000,000 per claim / $2,000,000 aggregate</li>
-        <li><strong>Surety or Fidelity Bond:</strong> $25,000</li>
-    </ul>
-    <p>Our policies will be active before we take on any clients this October. We are well-prepared and excited to serve the community we grew up in and currently live in.</p>
-</section>
-
-<section id="about-alex-savannah">
-    <h2>About Alex and Savannah</h2>
-    <p>Alex Popoff, a U.S. Air Force veteran who held a secret security clearance over 5 years and was trusted to guard classified materials and fighter jets, has passed several background checks in prior employment, ensuring your home is in safe hands. 
-    <p> Savannah Garner, with over 10 years of experience in hospitality management, brings a keen eye for detail and exceptional customer service.</p>
-    <p>Starting in October 2024, we will be accepting new clients. Our commitment to security, professionalism, and customer satisfaction sets us apart. Contact us to learn more about how we can protect and care for your home with a personalized plan today.</p>
-    <img src="1705020496968.jpg" alt="Alex Popoff" style="max-width: 200px; margin: 20px auto; display: block;">
-    <p style="text-align: center;">Connect with Alex on <a href="https://linkedin.com/in/alexpopoff" target="_blank">LinkedIn</a></p>
-    <p style="text-align: center; color: #888;">This site is a work in progress. Contact us or check back for updates!</p>
-</section>
-
-<section id="join-waitlist">
-    <h2>Join Our Waitlist</h2>
-    <p>We will be accepting new clients starting in October 2024. Secure your spot and ensure your home is well cared for while you're away. Reach out to learn more about our comprehensive services tailored for seasonal residents in Naples, FL.</p>
-    <div style="text-align: center; margin: 20px 0;">
-        <a href="mailto:apopoff1@proton.me" class="call-to-action">Email Us to Join the Waitlist</a>
+        <section id="insurance-bonding">
+            <h2>Our Insurance and Bonding Coverage</h2>
+            <p>At Naples HomeWatch & Care, your peace of mind is our priority. We understand the trust you place in us when we look after your home. To ensure your property is well-protected, we have comprehensive insurance and bonding coverage:</p>
+            <ul>
+                <li><strong>General Liability Insurance:</strong> $1,000,000 per occurrence / $2,000,000 aggregate</li>
+                <li><strong>Property Coverage:</strong> $100,000</li>
+                <li><strong>Business Interruption Insurance:</strong> Included in our Business Owners Policy</li>
+                <li><strong>Professional Liability Insurance:</strong> $1,000,000 per claim / $2,000,000 aggregate</li>
+                <li><strong>Surety or Fidelity Bond:</strong> $25,000</li>
+            </ul>
+            <p>Our policies will be active before we take on any clients this October. We are well-prepared and excited to serve the community we grew up in and currently live in.</p>
+        </section>
+        <section id="about-alex-savannah">
+            <h2>About Alex and Savannah</h2>
+            <p>Alex Popoff, a U.S. Air Force veteran who held a secret security clearance over 5 years and was trusted to guard classified materials and fighter jets, has passed several background checks in prior employment, ensuring your home is in safe hands.</p>
+            <p>Savannah Garner, with over 10 years of experience in hospitality management, brings a keen eye for detail and exceptional customer service.</p>
+            <p>Starting in October 2024, we will be accepting new clients. Our commitment to security, professionalism, and customer satisfaction sets us apart. Contact us to learn more about how we can protect and care for your home with a personalized plan today.</p>
+            <img src="1705020496968.jpg" alt="Alex Popoff" style="max-width: 200px; margin: 20px auto; display: block;">
+            <p style="text-align: center;">Connect with Alex on <a href="https://linkedin.com/in/alexpopoff" target="_blank">LinkedIn</a></p>
+            <p style="text-align: center; color: #888;">This site is a work in progress. Contact us or check back for updates!</p>
+        </section>
+        <section id="join-waitlist">
+            <h2>Join Our Waitlist</h2>
+            <p>We will be accepting new clients starting in October 2024. Secure your spot and ensure your home is well cared for while you're away. Reach out to learn more about our comprehensive services tailored for seasonal residents in Naples, FL.</p>
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="mailto:apopoff1@proton.me" class="cta">Email Us to Join the Waitlist</a>
+            </div>
+            <p style="text-align: center;">Or call Alex at <strong>(239) 235-9876</strong></p>
+        </section>
     </div>
-    <p style="text-align: center;">Or call Alex at <strong>(239) 235-9876</strong></p>
-</section>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Naples HomeWatch & Care</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            width: 85%;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .form-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .form-container h3 {
-            margin-bottom: 20px;
-            color: #4CAF50;
-        }
-        .form-container iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-    <div class="container">
-        <div class="form-container">
-            <h3>Get in Touch</h3>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUz5aCL3Fu8rmqyFDsFjZWZuoY6AQKbWzcBofmPzj2dBf6Mw/viewform?embedded=true" width="640" height="2070" frameborder="0" marginheight="0" marginwidth="0"></iframe>    </div>
+    <footer>
+        <p>© 2024 Naples HomeWatch & Care. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
