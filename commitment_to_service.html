@@ -206,17 +206,19 @@
             margin: 0;
         }
         .contact-form {
-            background-color: #f9f9f9;
+            background-color: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .contact-form h3 {
             margin-bottom: 20px;
+            color: #4CAF50;
         }
         .contact-form label {
             display: block;
             margin-bottom: 8px;
+            font-weight: bold;
         }
         .contact-form input, .contact-form textarea {
             width: 100%;
@@ -224,6 +226,7 @@
             margin-bottom: 20px;
             border: 1px solid #ddd;
             border-radius: 4px;
+            font-size: 1em;
         }
         .contact-form button {
             background-color: #4CAF50;
@@ -233,6 +236,7 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 1em;
+            transition: background-color 0.3s ease;
         }
         .contact-form button:hover {
             background-color: #45a049;
@@ -245,7 +249,7 @@
     </header>
     <div class="container">
         <div class="contact-form">
-            <h3>Get in Touch</h3>
+            <h3>Want to know more?</h3>
             <form action="send_mail.php" method="post">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
