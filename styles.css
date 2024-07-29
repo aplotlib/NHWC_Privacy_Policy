@@ -8,7 +8,8 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background: #fff;
@@ -25,6 +26,7 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
 section {
@@ -37,17 +39,20 @@ section h2 {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+    font-size: 2em;
 }
 
 section p, ul {
     text-align: left;
     padding: 0 20px;
+    font-size: 1.1em;
 }
 
 .highlight {
     background-color: #e7f3ff;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
+    font-size: 1.1em;
 }
 
 .call-to-action {
@@ -60,6 +65,7 @@ section p, ul {
     display: inline-block;
     margin-top: 20px;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .call-to-action:hover {
@@ -75,6 +81,7 @@ section p, ul {
     margin-top: 10px;
     display: inline-block;
     text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -97,11 +104,48 @@ table {
 
 th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px;
     text-align: left;
 }
 
 th {
     background-color: #4CAF50;
     color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 80%;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
 }
