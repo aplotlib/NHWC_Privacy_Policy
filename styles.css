@@ -148,3 +148,60 @@ th {
     background-color: #4CAF50;
     color: white;
 }
+
+/* Basic Responsive Adjustments */
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mobile Navigation */
+nav ul {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav ul.active {
+    display: flex;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+/* Button Adjustments */
+.cta-button {
+    font-size: 1em;
+    padding: 10px 20px;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .form-container iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .cta-button {
+        padding: 15px;
+        font-size: 1em;
+    }
+}
