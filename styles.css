@@ -1,4 +1,5 @@
-body {    font-family: 'Roboto', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f8ff;
@@ -8,6 +9,7 @@ body {    font-family: 'Roboto', sans-serif;
 
 .container {
     width: 85%;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background: #fff;
@@ -24,6 +26,7 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
 nav {
@@ -38,6 +41,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -48,10 +52,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: #2c3e50;
+    border-radius: 5px;
 }
 
 .cta-button {
@@ -148,10 +156,12 @@ th {
     color: white;
 }
 
-/* Basic Responsive Adjustments */
+/* Mobile Adjustments */
 .container {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 img {
@@ -194,60 +204,6 @@ nav li {
         font-size: 1.5em;
     }
 
-    .form-container iframe {
-        width: 100%;
-        height: auto;
-    }
-
-    .cta-button {
-        padding: 15px;
-        font-size: 1em;
-    }
-}
-/* Ensure the container is fluid and adjusts on smaller screens */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Make images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Improve font scaling and button size for smaller screens */
-.cta-button {
-    font-size: 1em;
-    padding: 12px 20px;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.cta-button:hover {
-    background-color: #45a049;
-}
-
-/* Media Queries for Mobile Devices */
-@media screen and (max-width: 768px) {
-    header {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 1.8em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
     .container {
         padding: 10px;
     }
@@ -267,7 +223,7 @@ img {
         height: auto;
     }
 }
-/* Styles for the navigation menu */
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -309,4 +265,4 @@ nav ul li a:hover {
         padding: 15px;
         font-size: 1.2em;
     }
-}
+        }
