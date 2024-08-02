@@ -172,6 +172,69 @@ img {
     height: auto;
 }
 
+/* Toggle button for mobile menu */
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Style adjustments for the nav list */
+nav ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #2c3e50;
+}
+
+nav ul.nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul.nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul.nav li a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Mobile navigation */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    nav ul.nav {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul.nav.active {
+        display: flex;
+    }
+    
+    nav ul.nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    nav ul.nav li a {
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
+
+
 
 /* Media Queries for Mobile Devices */
 @media screen and (max-width: 768px) {
